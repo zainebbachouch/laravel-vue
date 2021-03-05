@@ -5,7 +5,10 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProdutController extends Controller
+class ProductController extends Controller
 {
-    //
+    public function index()
+    {
+        return Product::all();
+    }
 }
